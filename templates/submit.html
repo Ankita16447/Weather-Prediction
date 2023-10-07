@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction page</title>
+    <style>
+        body{
+            background-color:lightgreen;
+        }
+        h1{
+            text-align:center;
+            font-family:cursive;
+            color: white;
+            font-size: 50px;
+        }
+        img{
+            width:400px;
+            height:400px;
+            margin:auto;
+            display: block;
+            border:2px solid white;
+            border-radius:20px;
+
+        }
+     </style>
+        
+</head>
+<body>
+     <h1>Prediction</h1>
+     {%if data== 1%} 
+      <h1>CLOUDY DAY</h1>
+      <img src="{{url_for('static',filename = 'rain.jpg')}}" alt="rain">
+
+     {%else%} 
+     <h1>SUNNY DAY</h1> 
+     <img src="{{url_for('static',filename = 'rain_not.jpg')}}" alt="rain">
+
+
+     {%endif%}
+      <!-- <a href="/">go back to home page</a> -->
+</body>
+</html>

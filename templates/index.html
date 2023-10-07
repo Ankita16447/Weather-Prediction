@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+h1{     
+    color:white;
+    font-weight: bold;
+    font-size : 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #111;
+}
+
+
+.form{
+    border:10px solid black;
+    display:block;
+    margin:auto;
+    width:700px;  
+}
+
+.form input {
+    margin: 8px;
+    padding:5px;
+    width: 400px;
+    border:2px solid black;
+    border-radius: 6px;
+
+}
+
+label{
+    font-weight: bold;
+}
+
+.btn{
+    border:2px solid black;
+    border-radius:20px;
+    background-color:black;
+    color:white;
+    padding:5px;
+    margin-left: 8px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight:bold;
+    width:200px;
+
+}
+.btn:hover{
+    color:black;
+    background-color:white;
+    border:2px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>WEATHER DATASET PREDICTION </h1>
+
+        <form class = "form" action="/submit" method="POST">
+
+            <div class="container">
+            <label for="minTemp" style="margin-left:5px">MinTemperature:</label>
+            <input type="number" id="min_temp" name="min_temp" step="any">
+            <br>
+            <label for="maxTemp" style="margin-left:2px">MaxTemperature:</label>
+            <input type="number" id="max_temp" name="max_temp" step="any" >
+            <br>
+            <label for="rain" style="margin-left:65px">Rainfall:</label>
+            <input type="number" id="rainfall" name="rainfall" step="any"  >
+            <br>
+            <label for="evap" style="margin-left:34px">Evaporation:</label>
+            <input type="number" id="evaporation" name="evaporation" step="any">
+            <br>
+            <label for="sun" style="margin-left:55px">Sunshine:</label>
+            <input type="number" id="sunshine" name="sunshine" step="any" > 
+             <br>
+            <label for="WindSpeed" style="margin-left:10px">WindSpeed3pm:</label>
+            <input type="number" id="wind_speed" name="wind_speed" step="any" >
+            <br>
+            <label for="humidity9" style="margin-left:20px">Humidity9am:</label>
+            <input type="number" id="humidity9" name="humidity9" step="any" >
+            <br>
+            <label for="humidity3" style="margin-left:19px">Humidity3pm:</label>
+            <input type="number" id="humidity3" name="humidity3" step="any" >
+            <br>
+            <label for="pressure9" style="margin-left:25px">Pressure9am:</label>
+            <input type="number" id="pressure9" name="pressure9" step="any" >
+            <br>
+            <label for="pressure3" style="margin-left:25px">Pressure3pm:</label>
+            <input type="number" id="pressure3" name="pressure3" step="any" >
+            <br>
+            <label for="cloud9" style="margin-left:39px">Cloud9am:</label>
+            <input type="number" id="cloud9" name="cloud9" step="any" >
+            <br>
+            <label for="cloud3" style="margin-left:39px">Cloud3pm:</label>
+            <input type="number" id="cloud3pm" name="cloud3" step="any" >
+            <br>
+            <label for="temp9" style="margin-left:40px">Temp9am:</label>
+            <input type="number" id="temp9" name="temp9" step="any" >
+            <br>
+            <label for="temp3" style="margin-left:40px">Temp3pm:</label>
+            <input type="number" id="temp3" name="temp3" step="any" >
+            <br>
+            <label for="rainT" style="margin-left:30px">Rain Today:</label>
+            <input type="number" id="rainT" name="rainT" step="any" >
+            <br>
+            <label for="rain_mm" style="margin-left:35px">Rain_MM:</label>
+            <input type="number" id="rain_mm" name="rain_mm" step="any" >
+            <br>
+            <input type="submit", class="btn" value="predict!" >
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
